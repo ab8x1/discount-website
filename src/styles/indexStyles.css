@@ -93,8 +93,15 @@
 #landingImg{
     width: 100%;
     max-width: 1100px;
+    min-width: 650px;
+    align-self: flex-start;
 }
 
+@media (min-width: 650px){
+    #landingImg{
+        align-self: auto;
+    }
+}
 
 @media (min-width: 768px){
     .sticker{
