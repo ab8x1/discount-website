@@ -7,6 +7,8 @@ const path = require('path');
 module.exports = {
   entry: {
     main: './src/main.js',
+    index: './src/index.js',
+    subscription: './src/subscription.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -41,7 +43,14 @@ module.exports = {
       filename: '[name].[contenthash].css'
     }),
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      filename: 'index.html',
+      template: './src/index.html',
+      chunks: ['main', 'index']
     }),
+    new HtmlWebpackPlugin({
+      filename: 'subscription.html',
+      template: './src/subscription.html',
+      chunks: ['main', 'subscription']
+    })
   ],
 };

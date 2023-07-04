@@ -1,0 +1,47 @@
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#contentContainer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#contentContainer h1{
+    font-family: Inter-Bold, Inter-fallback;
+    font-size: 2.3rem;
+}
+
+#contentContainer p{
+    line-height: 1.5rem;
+} 
+
+#containerLogo{
+    width: 60px;
+}
+
+#userEmail{
+    margin: 0 0 20px 0;
+    color: #115600;
+    font-weight: bold;
+}
+
+@media (min-width: 768px){
+    #contentContainer h1{
+        font-size: 2.7rem;
+    }
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1100px){
+
+}

@@ -1,4 +1,4 @@
-import "./styles/indexStyles.css"
+import "./styles/mainStyles.css"
 import observeImg from './modules/observe'
 
 const lazyImgs = document.getElementsByClassName('lazyImg');
