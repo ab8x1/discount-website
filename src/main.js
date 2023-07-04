@@ -1,5 +1,6 @@
-import "./styles/mainStyles.css"
+import './styles/mainStyles.css'
 import observeImg from './modules/observe'
+import './public/social-card.png'
 
 const lazyImgs = document.getElementsByClassName('lazyImg');
 [...lazyImgs].forEach(img => {
