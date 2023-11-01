@@ -29,7 +29,7 @@ module.exports = merge(common ,{
         }
       },
       {
-        test: /(social-card\.png)$/,
+        test: /(social-card\.png|animation\.json)$/,
         type: 'asset/resource',
         generator: {
           filename: 'public/[name][ext]'

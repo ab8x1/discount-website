@@ -1,5 +1,6 @@
 import "./styles/indexStyles.css"
-import lottie from 'lottie-web';
+import lottie from "lottie-web"
+import "./public/animation.json"
 
 const animationElement = document.getElementById("animation");
 
