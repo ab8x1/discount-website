@@ -14,11 +14,27 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     </head>
 <body id="mainContainer" class="container">
-    <nav id="navabr">
-        <a href="/">
+    <nav id="navbar">
+        <a href="/" class="logo alignY">
             <img src="./public/logo.svg" />
+            <span class="hideMobile">Discount</span>
         </a>
-        <a href="https://docs.discount.finance/" target="_blank">How does it work?</a>
+        <div class="navLinks alignY">
+            <div class="navLinks alignY hideMobile">
+                <a href="https://docs.discount.finance/" target="_blank" class="navLink">
+                    About
+                </a>
+                <a href="https://twitter.com/discount_fi" target="_blank" class="navLink" style="width: 19px; height: 16px">
+                    <img src="./public/twitter.svg"/>
+                </a>
+                <a href="https://discord.gg/XAJsvVHmkA" target="_blank" class="navLink" style="width: 21px; height: 15px">
+                    <img src="./public/discord.svg" />
+                </a>
+            </div>
+            <a href="https://beta.discount.finance/?utm_campaign=i&utm_source=home" target="_blank" class="primaryButton">
+                Open Beta
+            </a>
+        </div>
     </nav>
     <main id="contentContainer" class="container">
         <h1>Welcome to Discount's Newsletter!</h1>

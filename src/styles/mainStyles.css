@@ -8,8 +8,9 @@
 }
 
 :root {
-    --dark: #101828;    ;
+    --dark: #101828;
     --light: #475467;
+    --primary: #1BE080;
 }
 
 html{
@@ -18,7 +19,8 @@ html{
     -webkit-tap-highlight-color: transparent;
     font-size: 14px;
     height: 100%;
-    background: #F6F9FF;
+    background: #EDF3FF;
+    color: var(--dark);
 }
 
 *{
@@ -40,6 +42,11 @@ html, body{
     margin: 0;
 }
 
+section{
+    width: 100%;
+    margin-top: 60px;
+}
+
 .container{
     width: 100%;
     max-width: 1280px;
@@ -52,24 +59,47 @@ html, body{
     align-items: center;
 }
 
-#navabr {
+.primary{
+    color: var(--primary);
+    font-weight: 600;
+}
+
+#navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5px;
+    padding-top: 10px;
 }
 
-#navabr img {
-    width: 148px;
-    height: 35px;
+.logo{
+    gap: 15px;
+    font-weight: 700;
+    font-size: 30px;
 }
 
-#navabr a{
-    color: #1E1D34;
-    font-size: 1rem;
-    font-style: normal;
+.logo img{
+    width: 54px;
+    height: 54px;
+}
+
+.navLinks{
+    gap: 25px;
+}
+
+.navLink{
+    color: var(--light);
+    font-size: rem;
+    font-weight: 500;
+}
+
+.primaryButton{
+    display: table;
+    padding: 16px 30px;
+    color: white;
     font-weight: 600;
-    text-decoration-line: underline;
+    font-size: 1rem;
+    background-color: #1BE080;
+    border-radius: 10px;
 }
 
 main{
@@ -83,7 +113,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 40px 0 10px 0; 
+    margin: 40px 0 10px 0;
 }
 
 #footer a{
@@ -106,18 +136,18 @@ main{
         background: #E0E0E0;
         border-radius: 8px;
     }
-    #navabr {
-        padding: 40px 10px;
+    section{
+        margin-top: 75px;
     }
-    #navabr img {
-        width: 211px;
-        height: 50px;
+    #navbar{
+        padding-top: 35px;
     }
-    #navabr a{
-        font-size: 1.25rem;
+    .primaryButton{
+        padding: 16px 38px;
+        font-size: 1.125rem;
     }
     #footer{
-        margin: 40px 0 20px 0; 
+        margin: 40px 0 20px 0;
     }
 }
 

@@ -26,6 +26,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "lottie-web": "^5.12.2",
     "webpack-merge": "^5.8.0"
   }
 }
