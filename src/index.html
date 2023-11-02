@@ -69,8 +69,8 @@
                 <div class="gridContainer">
                     <img src="./public/exampleDeal.svg"/>
                     <div class="landingInfo">
-                        <div class="dealTitle">Buy, Wait & <span class="primary">Earn</span></div>
-                        <div class="dealSubtitle">Understand what you’ll earn before you invest. Forget the guesswork and predictions. </div>
+                        <p class="sectionTitle">Buy, Wait & <span class="primary">Earn</span></p>
+                        <p class="sectionSubtitle">Understand what you’ll earn before you invest. Forget the guesswork and predictions. </p>
                         <ul class="dealList">
                             <li>Purchase <span class="primary">crypto at discount</span></li>
                             <li>Wait until Claim Date</li>
@@ -85,10 +85,9 @@
                     <p class="subTitle" style="color:white;">waiting for Discount’s official launch</p>
                 </div>
                 <form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl">
-                    <div class="alignY">
+                    <div class="alignY inputForm">
                         <div id="inputContainer">
                             <input id="emailInput" type="text" placeholder="Your email" name="email" value="" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
-                            <img id="emailIcon" src="./public/email.svg" alt="email icon"/>
                         </div>
                         <button type="submit" id="submitFrom" class="submitButton">
                             Keep me posted
@@ -108,8 +107,15 @@
                     </div>
                 </form>
             </section>
-            <section>
-                <img id="landingImg" src="./public/landing-img.png"/>
+            <section class="centerSection">
+                <p class="sectionTitle">Track your earnings via a simple dashboard</p>
+                <p class="sectionSubtitle">View instant earnings per second, daily returns, and fixed total future earnings.</p>
+                <a href="https://beta.discount.finance/?utm_campaign=i&utm_source=home" target="_blank" class="primaryButton" style="margin-top: 40px;">
+                    Open Beta
+                </a>
+            </section>
+            <section class="centerSection">
+                <img data-src="./public/landing-img.png" id="landingImg" class="lazyImg"/>
             </section>
         </main>
         <footer id="footer" class="container">

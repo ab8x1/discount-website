@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
+    justify-items: center;
 }
 
 .gridContainer img{
@@ -60,21 +61,21 @@
     margin: 0 0 3rem 0;
 }
 
-.dealTitle{
+.sectionTitle{
     text-align: center;
     font-size: 25px;
     font-weight: 600;
     line-height: 38px;
-    margin-bottom: 16px;
-    margin-top: 40px;
+    margin: 40px 0 16px 0;
 }
 
-.dealSubtitle{
+.sectionSubtitle{
     color: var(--light);
     text-align: center;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px; /* 155.556% */
+    margin: 0;
 }
 
 .dealList{
@@ -95,35 +96,35 @@
     grid-template-columns: 1fr;
     align-items: center;
     text-align: center;
+    gap: 20px;
     width: 100%;
     background-color: var(--dark);
-    max-width: 1100px;
     padding: 40px;
     color: white;
     border-radius: 16px;
 }
 
+.inputForm{
+   gap: 16px;
+   flex-direction: column;
+}
+
+
 #inputContainer{
-    position: relative;
+    flex: 1;
     width: 100%;
 }
 
 #inputContainer input{
     width: 100%;
-    padding: 15px 30px 15px 50px;
+    padding: 12px 20px;
     border-radius: 10px;
     outline: none;
-    font-size: 1.15rem;
+    font-size: 1rem;
     border: 1px solid #D0D5DD;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 }
 
-#emailIcon{
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
 #infoCol input::placeholder{
     color: #708195;
@@ -132,14 +133,17 @@
 
 
 .submitButton{
-    padding: 14px 30px;
-    border-radius: 8.603px;
-    background: #1E1D34;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: white;
     font-weight: 600;
-    color: white;
-    font-size: 1.25rem;
-    box-shadow: 0px 1px 2.155px 0px rgba(16, 24, 40, 0.05);
+    border: 1px solid #7F56D9;
+    font-size: 1rem;
+    border: 1px solid #7F56D9;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
     white-space: nowrap;
+    color: var(--dark);
+    width: 100%;
 }
 
 .submitButton:hover{
@@ -154,11 +158,15 @@
     margin-bottom: 10px;
 }
 
+.centerSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #landingImg{
     width: 100%;
-    max-width: 1100px;
-    min-width: 650px;
-    align-self: flex-start;
+    max-width: 1200px;
 }
 
 @media (min-width: 650px){
@@ -170,6 +178,7 @@
 @media (min-width: 768px){
     .gridContainer{
         grid-template-columns: 0.55fr 0.45fr;
+        justify-items: flex-start;
     }
     .landingInfo{
         align-items: flex-start;
@@ -181,12 +190,12 @@
     .subTitle{
         text-align: left;
     }
-    .dealTitle{
+    .sectionTitle{
         text-align: left;
         font-size: 36px;
         margin-top: 0;
     }
-    .dealSubtitle{
+    .sectionSubtitle{
         text-align: left;
         font-size: 18px;
     }
@@ -194,6 +203,12 @@
         grid-template-columns: 0.4fr 0.6fr;
         padding: 64px;
         text-align: left;
+    }
+    .inputForm{
+        flex-direction: row;
+    }
+    .submitButton{
+        width: auto;
     }
     .join{
         font-size: 30px;
