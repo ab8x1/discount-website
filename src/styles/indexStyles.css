@@ -28,7 +28,8 @@
 }
 
 .sticker{
-    display: table;
+    display: flex;
+    align-items: center;
     color: #1D4248;
     font-size: 1rem;
     font-weight: 500;
